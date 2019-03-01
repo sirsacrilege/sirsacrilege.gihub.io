@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Go Bart Or Go Homer</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <audio autoplay loop id="audio">
+            <source src="House_loop.ogg" type="audio/ogg" />
+        </audio>
+        <!-- ---------Start Screen--------- -->
+        <div class="logo" onclick="StartGame()" id="logo">
+            <img src="Logo.png" />
+        </div>
+
+        <!-- ---------PLayer Select--------- -->
+
+
+        <div class="rules" id="rules">
+            <button onclick="Rules()">
+                <h1>Go Big or Go Home Rules</h1><br /><br />
+                You and a friend are real estate agents for Bart Co. Realty. <br />
+                You will be competeing for the affection of the house of your dreams.<br />
+                Pick the best dialog in order to win over the house.<br />
+                May the best realtor win!
+
+            </button>
+        </div>
+
+
+        <!-- ---------Character Select--------- -->
+
+        <div class="chad" id="chad">
+            <div onclick="Chad()"></div>
+        </div>
+        <div class="stacy" id="stacy">
+            <div onclick="Stacy()"></div>
+        </div>
+
+        <!-- ---------Game Start--------- -->
+
+        <div class="intro charPic" id="charPic">
+            <div class="pic"><img id="characterPicture" src="BuffHouse_Default.png" /></div>
+        </div>
+        <div class="intro textBox" id="textBox">
+            Text
+        </div>
+        <div class="intro dialogBoxes" id="dialogBoxes">
+            <div id="one" onclick="NextQuestion(1); PointsFunction(1)">Option One</div>
+            <div id="two" onclick="NextQuestion(2); PointsFunction(2)">Option Two</div>
+            <div id="three" onclick="NextQuestion(3);PointsFunction(3)">Option Three</div>
+            <div id="four" onclick="NextQuestion(4);PointsFunction(4)">Option Four</div>
+        </div>
+
+        <!-- ---------Win Screen--------- -->
+
+
+    </div>
+</body>
+</html>

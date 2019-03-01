@@ -1,0 +1,165 @@
+﻿body{
+    margin:0px 0px 0px 0px;
+}
+.container{
+    display:grid;
+    grid-template-rows:repeat(11,1fr);
+    grid-template-columns:repeat(11,1fr);
+    height:100%;
+    width:100%;
+    height:100vh;
+    width:100vw;
+    grid-row-gap:3px;
+    margin:0px 0px 0px 0px;
+
+    /*----------------animated background----------------*/
+    background: repeating-linear-gradient(
+    45deg,
+    aquamarine,
+    aquamarine 100px,
+    rgb(0, 255, 227) 100px,
+    rgb(0, 255, 227) 200px
+  );
+    background-size: 200% 200%;
+    animation: barberpole 10s linear infinite;
+}
+
+@keyframes barberpole {
+    100% {
+        background-position: 100% 100%;
+    }
+}
+/*Start Page Styling*/
+.logo{
+    grid-column:span 11;
+    grid-row:span 11;
+}
+.logo img{
+    display:flex;
+    align-content:center;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+/*player select styling*/
+.rules{
+    display:none;
+    grid-column:2/ span 9;
+    grid-row:2/ span 9;
+    height:75vh;
+}
+
+.rules button {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 172, 243, 0.85);
+    border: 10px solid white;
+    font-size:large;
+    font-weight:bold;
+}
+
+/*Character styling*/
+
+.chad {
+    display: none;
+    grid-column: 2/span 4;
+    grid-row: 2 /span 9;
+    height: 75vh;
+}
+.stacy {
+    display: none;
+    grid-column: 7/ span 4;
+    grid-row: 2/ span 9;
+    height: 75vh
+}
+
+.chad div {
+    height: 100%;
+    width: 100%;
+    background-image:url('BuffHouse_Detailed.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:60%;
+    border-radius:5px;
+    background-color:rgba(255, 172, 243, 0.85);
+    border:10px solid white;
+
+}
+.stacy div {
+    height: 100%;
+    width: 100%;
+    background-image: url('SchoolGirl_Detailed.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    border-radius: 5px;
+    background-color: rgba(255, 172, 243, 0.85);
+    border: 10px solid white;
+}
+
+/*Question One*/
+
+.intro{
+    display:none;
+    text-align:center;
+}
+.dialogBoxes {
+    grid-column: 2/span 9;
+    grid-row: 10/span 2;
+    background-color: rgba(0, 0, 0, 0.80);
+    border-radius: 10px;
+    justify-content: space-around;
+    color: white;
+    padding-top: 2em;
+    padding-bottom:2em;
+    border: 2px solid white;
+    font-weight:400;
+}
+#one:hover{
+    color:aquamarine;
+}
+#two:hover {
+    color: aqua;
+}
+#three:hover {
+    color: aquamarine;
+}
+#four:hover{
+    color:aqua;
+}
+
+#one{
+    /*border-right:2px solid white;*/
+    padding-right:10px;
+}
+#two {
+    /*border-right: 2px solid white;*/
+    padding-right: 10px;
+}
+#three {
+    /*border-right: 2px solid white;*/
+    padding-right: 10px;
+}
+#four {
+    padding-right: 10px;
+}
+
+.textBox{
+    grid-column:2/span 9;
+    grid-row:7/ span 3;
+    background-color:rgba(255, 172, 243, 0.85);
+    border-radius:10px;
+    justify-content:center;
+    padding-top:2em;
+    border:2px solid white;
+    font-weight:bold;
+}
+.charPic{
+    grid-column:1/ span 11;
+    grid-row:1/ span 11;
+    justify-content:center;
+}
+.pic img{
+    height:100vh;
+}
