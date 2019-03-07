@@ -1,4 +1,9 @@
-﻿window.onload=location.reload();
+﻿window.onload = function() {
+    if (!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
 //---------Game Start screen to Player Select screen
 function StartGame() {
     var y = document.getElementById("rules");
