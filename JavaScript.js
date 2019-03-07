@@ -1,4 +1,4 @@
-﻿
+﻿window.onload=location.reload();
 //---------Game Start screen to Player Select screen
 function StartGame() {
     var y = document.getElementById("rules");
